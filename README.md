@@ -3,3 +3,10 @@
 ## Requisitos
 - PHP 8
 - SQLite
+
+## Iniciar
+- Rodar o comando <code>php artisan serve</code>
+- Caso der problema com tabelas do banco, rodar as migrations <code>php artisan migrate</code>
+- Um usuário com todas permissões já estará cadastrado: <code>teste@teste.com</code> <code>123</code>
+- Quando um usuário/permissionário é cadastrado, a senha é setada automaticamente para <code>123</code>
+- Utilizar o <code>.env.example</code> como base para criar seu <code>.env</code> local.
