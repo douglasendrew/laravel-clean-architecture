@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('locais', function (Blueprint $table) {
             $table->id();
+            $table->string('local_name');
             $table->string('local_cep');
             $table->string('local_city');
             $table->string('local_address');
@@ -30,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_local');
+        Schema::dropIfExists('locais');
     }
 };
